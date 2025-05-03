@@ -1,18 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Discord Bot</title>
     <style>
-      body { font-family: sans-serif; text-align: center; padding: 50px; background: #2c2f33; color: #fff; }
-      a { color: #7289da; text-decoration: none; font-size: 20px; }
-      .btn { display: inline-block; padding: 10px 20px; background: #7289da; color: white; border-radius: 5px; margin-top: 20px; text-decoration: none; }
+      /* Reset some default styles */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Arial', sans-serif;
+        background: #2c2f33;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Main container */
+      .container {
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+        padding: 40px;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #7289da;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      a {
+        color: #7289da;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: all 0.3s ease;
+      }
+
+      /* Styled buttons */
+      .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: #7289da;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        border-radius: 25px;
+        text-decoration: none;
+        margin: 15px 0;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #5b6e8c;
+      }
+
+      .btn:active {
+        background-color: #475a72;
+      }
+
+      .support-link {
+        display: block;
+        margin-top: 20px;
+        font-size: 1rem;
+        color: #99aab5;
+      }
+
+      .support-link:hover {
+        color: #7289da;
+      }
     </style>
   </head>
   <body>
-    <h1>🌟 My Discord Bot</h1>
-    <p>A powerful and easy-to-use Discord bot</p>
-    <a href="https://discord.com/oauth2/authorize?client_id=1367944005161193603&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn">Invite the Bot</a>
-    <br>
-    <a href="https://discord.gg/NAhr3byzJj">Join Support Server</a>
+    <div class="container">
+      <h1>🌟 My Discord Bot</h1>
+      <p>A powerful and easy-to-use Discord bot to enhance your server experience!</p>
+      <a href="https://discord.com/oauth2/authorize?client_id=1367944005161193603&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn">Invite the Bot</a>
+      <a href="https://discord.gg/NAhr3byzJj" class="support-link">Join Support Server</a>
+    </div>
   </body>
 </html>
