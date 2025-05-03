@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Discord Bot</title>
     <style>
-      /* Reset some default styles */
+      /* Resetting basic styles */
       * {
         margin: 0;
         padding: 0;
@@ -14,71 +14,90 @@
 
       body {
         font-family: 'Arial', sans-serif;
-        background: #2c2f33;
-        color: white;
+        background: linear-gradient(135deg, #7289da, #2c2f33);
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh;
-        padding: 20px;
+        height: 100vh;
+        color: white;
         text-align: center;
+        padding: 0 20px;
       }
 
-      /* Main container */
       .container {
-        background: rgba(0, 0, 0, 0.6);
-        border-radius: 10px;
-        padding: 40px;
+        background: rgba(0, 0, 0, 0.7);
+        padding: 50px;
+        border-radius: 15px;
         max-width: 600px;
         width: 100%;
-        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.4);
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(50px); }
+        100% { opacity: 1; transform: translateY(0); }
       }
 
       h1 {
         font-size: 3rem;
         margin-bottom: 20px;
-        color: #7289da;
+        color: #fff;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
       }
 
       p {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         margin-bottom: 30px;
+        line-height: 1.6;
+        font-weight: 300;
       }
 
       a {
         color: #7289da;
         text-decoration: none;
         font-size: 1.2rem;
-        transition: all 0.3s ease;
+        font-weight: bold;
+        transition: transform 0.3s ease, color 0.3s ease;
       }
 
-      /* Styled buttons */
+      a:hover {
+        color: #fff;
+        transform: scale(1.1);
+      }
+
+      /* Invite button */
       .btn {
         display: inline-block;
         padding: 15px 30px;
-        background: #7289da;
+        background: linear-gradient(135deg, #7289da, #5b6e8c);
         color: white;
         font-size: 1.2rem;
         font-weight: bold;
-        border-radius: 25px;
-        text-decoration: none;
+        border-radius: 30px;
         margin: 15px 0;
-        transition: background-color 0.3s ease;
+        text-decoration: none;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s ease, transform 0.2s ease;
       }
 
       .btn:hover {
-        background-color: #5b6e8c;
+        background: linear-gradient(135deg, #5b6e8c, #7289da);
+        transform: translateY(-5px);
       }
 
       .btn:active {
-        background-color: #475a72;
+        background: linear-gradient(135deg, #7289da, #5b6e8c);
+        transform: translateY(2px);
       }
 
+      /* Support link */
       .support-link {
         display: block;
         margin-top: 20px;
         font-size: 1rem;
         color: #99aab5;
+        transition: color 0.3s ease;
       }
 
       .support-link:hover {
@@ -89,7 +108,7 @@
   <body>
     <div class="container">
       <h1>🌟 My Discord Bot</h1>
-      <p>A powerful and easy-to-use Discord bot to enhance your server experience!</p>
+      <p>A powerful and easy-to-use Discord bot designed to enhance your server!</p>
       <a href="https://discord.com/oauth2/authorize?client_id=1367944005161193603&permissions=8&integration_type=0&scope=bot+applications.commands" class="btn">Invite the Bot</a>
       <a href="https://discord.gg/NAhr3byzJj" class="support-link">Join Support Server</a>
     </div>
