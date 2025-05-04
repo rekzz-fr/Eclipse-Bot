@@ -22,6 +22,35 @@
         color: white;
         text-align: center;
         padding: 0 20px;
+        flex-direction: column;
+      }
+
+      /* Header Section for image and portfolio link */
+      .header {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+      }
+
+      .header img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      .header a {
+        color: #7289da;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      .header a:hover {
+        color: #fff;
       }
 
       .container {
@@ -103,28 +132,20 @@
       .support-link:hover {
         color: #7289da;
       }
-
-      /* Portfolio link */
-      .portfolio-link {
-        display: block;
-        margin-top: 30px;
-        font-size: 1rem;
-        color: #99aab5;
-        transition: color 0.3s ease;
-      }
-
-      .portfolio-link:hover {
-        color: #7289da;
-      }
     </style>
   </head>
   <body>
+    <!-- Header Section with Portfolio Link -->
+    <div class="header">
+      <img src="https://cdn.revere.dev/image/514063fc423334f92e86553e3fd8d721.jpeg" alt="Profile Picture">
+      <a href="https://revere.dev/ca31an" target="_blank">My Portfolio</a>
+    </div>
+
     <div class="container">
       <h1>🌟 Eclipse Bot</h1>
       <p>A powerful and easy-to-use Discord bot designed to enhance your server!</p>
       <a href="https://discord.com/oauth2/authorize?client_id=1368538723591127040" class="btn">Invite the Bot</a>
       <a href="https://discord.gg/KSBmU9gFq8" class="support-link">Join Support Server</a>
-      <a href="https://revere.dev/ca31an" class="portfolio-link" target="_blank">Visit my Portfolio</a>
     </div>
   </body>
 </html>
